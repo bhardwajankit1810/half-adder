@@ -49,3 +49,6 @@
 !/output/**/*.bit
 !/output/**/*.xsa
 !/output/**/*.dcp   
+
+
+!/**.wcfg
