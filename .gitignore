@@ -1,0 +1,51 @@
+# Ignore everything
+*
+
+# Unignore directories (recursive whitelist)
+!*/
+
+# Unignore the gitignore file itself
+!.gitignore
+
+# Source files: HDL, Block Designs, EDIF
+!*.vhd
+!*.v
+!*.sv
+!*.vhdl
+!*.vh
+!*.bd
+!*.edif
+
+# IP core definitions
+!*.xci
+
+# Constraints
+!*.xdc
+
+# Project and Build Scripts
+!*.tcl
+!*.xpr
+
+# Simulation files (if tracked separately)
+!/sim/**
+
+# Block Design HDL wrappers
+!/bd/*/*.bd
+!/bd/*/hdl/*.sv
+!/bd/*/hdl/*.v
+!/bd/*/hdl/*.vhd
+!/bd/*/hdl/*.vhdl
+
+# HLS sources
+!/hls/*/sources/*.cpp
+!/hls/*/sources/*.hpp
+!/hls/*/testbench/*.cpp
+
+# IP definition files
+!/ip/*/*.xci
+!/ip/hls_ip/**
+
+# Output artifacts (optional: only if you want to track bitstreams/checkpoints)
+!/output/**/*.bit
+!/output/**/*.xsa
+!/output/**/*.dcp   
